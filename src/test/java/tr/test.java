@@ -29,7 +29,7 @@ public class test {
         //System.setProperty("webdriver.chrome.driver", "/home/zied/Téléchargements/chromedriver");
 		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.setHeadless(true);
+		//options.setHeadless(true);
 
 		driver = new ChromeDriver(options);
 
