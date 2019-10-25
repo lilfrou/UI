@@ -27,7 +27,7 @@ public class test {
 
 		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("useAutomationExtension", false);
+		options.addArguments("--no-sandbox");
 		//options.setHeadless(true);
 
 		driver = new ChromeDriver(options);
