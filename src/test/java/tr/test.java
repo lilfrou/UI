@@ -25,10 +25,9 @@ public class test {
 	@BeforeTest
 	public void setuptest() {
 
-		 //System.setProperty("webdriver.chrome.driver", "/home/firas/Téléchargements/chromedriver_linux64/chromedriver");
-        //System.setProperty("webdriver.chrome.driver", "/home/zied/Téléchargements/chromedriver");
 		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/chromedriver");
 		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("useAutomationExtension", false);
 		//options.setHeadless(true);
 
 		driver = new ChromeDriver(options);
